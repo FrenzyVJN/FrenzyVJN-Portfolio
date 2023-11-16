@@ -39,7 +39,7 @@ const projects = [
   // Add more projects as needed
 ];
 
-function Project({ title ,description }) {
+function Project({ title ,description } : {title : any, description : any}) {
   return (
     <div className="mb-4 p-6 bg-black rounded-2xl shadow-white border shadow-lg border-white">
       <h3 className="text-white text-2xl font-bold mb-2">{title}</h3>
