@@ -1,7 +1,7 @@
 import { MdHome } from "react-icons/md";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { FaRegUser } from "react-icons/fa";
-import './index.css'
+
 function Header() {
     return (
         <div className="flex bg-black">
