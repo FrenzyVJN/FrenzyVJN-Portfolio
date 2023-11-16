@@ -32,7 +32,9 @@ function Home() {
         <main className="min-h-screen flex flex-col items-center bg-black text-white overflow-y-hidden">
             <div className="w-full md:w-1/2 h-auto shadow-white rounded-2xl shadow-lg border border-white py-24 mt-10 mb-10">
                 <div className='flex justify-center'>
-                <img className="flex" src = "https://i.imgur.com/skwUD9f.png" alt="FrenzyVJN" width="100" height="100" />
+                <a href='/'>
+                    <img className="flex" src = "https://i.imgur.com/skwUD9f.png" alt="FrenzyVJN" width="100" height="100" />
+                </a>
                 </div>
                 <h1 className="text-6xl text-center font-bold mb-4">FrenzyVJN</h1>
 
