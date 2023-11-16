@@ -28,7 +28,7 @@ function AboutMe() {
         },
       ];
     return ( 
-        <main className="min-h-screen w-screen flex flex-col items-center bg-black text-white p-4 overflow-x-hidden">            
+        <main className="h-screen flex flex-col items-center bg-black text-white p-4 overflow-y-hidden">            
             <section className="mb-10 mt-10 w-full py-32 md:w-2/3 lg:w-1/2 border border-white rounded-2xl shadow-white shadow-lg p-6">
                 <h2 className="text-5xl font-bold mb-4">About Me</h2>
                 <br/>
