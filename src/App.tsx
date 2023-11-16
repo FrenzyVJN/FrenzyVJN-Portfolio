@@ -66,7 +66,7 @@ function App() {
 
       <section className="my-8 w-full md:w-2/3 lg:w-1/2 border border-white rounded-2xl shadow-white shadow-lg p-6">
         <h2 className="text-3xl font-bold mb-4">About Me</h2>
-        <p className="text-justify text-lg">
+        <p className="text-center text-lg">
           Hi, I am FrenzyVJN. I am a College Student who is into Cybersecurity (Ethical hacking, CTFs) and Full-Stack Developing. I have expertise in Python and JS with knowledge of Flask, React. I also know C and R.        
         </p>
       </section>
