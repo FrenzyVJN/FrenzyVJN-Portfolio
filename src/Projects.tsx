@@ -50,13 +50,13 @@ function Project() {
       ];
     return ( 
         <main className="min-h-screen w-screen flex flex-col items-center bg-black text-white p-4 overflow-x-hidden">
-        <section className="my-8 w-full md:w-2/3 lg:w-1/2 border shadow-lg shadow-white rounded-xl p-6">
+        <section className="w-full md:w-2/3 lg:w-1/2 border shadow-lg shadow-white rounded-xl mt-10 mb-10 py-16 p-6">
         <h2 className="text-3xl font-bold mb-4">Projects</h2>
         {projects.map((project, index) => (
           <Project key={index} {...project} />
         ))}
       </section>
-      <section className="my-8 w-full md:w-2/3 lg:w-1/2">
+      <section className=" w-full md:w-2/3 lg:w-1/2">
             <h2 className="text-3xl font-bold mb-4">Social</h2>
             <div className="flex items-center mt-2">
             {socialMedias.map((socialMedia, index) => (

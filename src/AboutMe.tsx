@@ -29,13 +29,14 @@ function AboutMe() {
       ];
     return ( 
         <main className="min-h-screen w-screen flex flex-col items-center bg-black text-white p-4 overflow-x-hidden">            
-            <section className="my-8 w-full md:w-2/3 lg:w-1/2 border border-white rounded-2xl shadow-white shadow-lg p-6">
-                <h2 className="text-3xl font-bold mb-4">About Me</h2>
-                <p className="text-center text-lg">
+            <section className="mb-10 mt-10 w-full py-32 md:w-2/3 lg:w-1/2 border border-white rounded-2xl shadow-white shadow-lg p-6">
+                <h2 className="text-5xl font-bold mb-4">About Me</h2>
+                <br/>
+                <p className="text-center text-xl">
                 Hi, I am FrenzyVJN. I am a College Student who is into Cybersecurity (Ethical hacking, CTFs) and Full-Stack Development. I have expertise in Python and JS with knowledge of Flask, React. I also know C and R.        
                 </p>
             </section>
-            <section className="my-8 w-full md:w-2/3 lg:w-1/2">
+            <section className="mb-auto w-full md:w-2/3 lg:w-1/2">
             <h2 className="text-3xl font-bold mb-4">Social</h2>
             <div className="flex items-center mt-2">
             {socialMedias.map((socialMedia, index) => (

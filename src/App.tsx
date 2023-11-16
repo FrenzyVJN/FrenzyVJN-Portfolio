@@ -3,10 +3,12 @@ import Home from './Home';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Help from './backup'
+import Header from './Header';
 
 export default function App() {
   return (
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Help />} />
         <Route path="/about" element={<AboutMe />} />
