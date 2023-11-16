@@ -51,7 +51,7 @@ function Project({ title ,description } : {title : any, description : any}) {
 function App() {
   return (
     <main className="min-h-screen flex flex-col items-center bg-black text-white p-4">
-      <div className="w-full md:w-1/2 shadow-white h-auto rounded-2xl shadow-lg border border-white my-8 p-6">
+      <div className="w-full h-auto md:w-1/2 shadow-white rounded-2xl shadow-lg border border-white my-8 p-6">
         <div className='flex justify-center'>
           <img className="flex" src = "https://i.imgur.com/skwUD9f.png" alt="FrenzyVJN" width="100" height="100" />
         </div>
@@ -67,7 +67,7 @@ function App() {
       <section className="my-8 w-full md:w-2/3 lg:w-1/2 border border-white rounded-2xl shadow-white shadow-lg p-6">
         <h2 className="text-3xl font-bold mb-4">About Me</h2>
         <p className="text-center text-lg">
-          Hi, I am FrenzyVJN. I am a College Student who is into Cybersecurity (Ethical hacking, CTFs) and Full-Stack Developing. I have expertise in Python and JS with knowledge of Flask, React. I also know C and R.        
+          Hi, I am FrenzyVJN. I am a College Student who is into Cybersecurity (Ethical hacking, CTFs) and Full-Stack Development. I have expertise in Python and JS with knowledge of Flask, React. I also know C and R.        
         </p>
       </section>
 
