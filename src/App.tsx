@@ -52,10 +52,11 @@ function App() {
   return (
     <main className="min-h-screen flex flex-col items-center bg-black text-white p-4">
       <div className="w-full md:w-1/2 shadow-white h-auto rounded-2xl shadow-lg border border-white my-8 p-6">
-        <h1 className="text-4xl text-center font-bold mb-4">FrenzyVJN</h1>
         <div className='flex justify-center'>
           <img className="flex" src = "https://i.imgur.com/skwUD9f.png" alt="FrenzyVJN" width="100" height="100" />
         </div>
+        <h1 className="text-4xl text-center font-bold mb-4">FrenzyVJN</h1>
+
         <div className='mb-4'>
           <h2 className="text-lg text-center">
             Tech Enthusiast | Full-Stack Developer | Cybersecurity Enthusiast
