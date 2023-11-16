@@ -50,7 +50,7 @@ function Project({ title ,description } : {title : any, description : any}) {
 
 function App() {
   return (
-    <main className="min-h-screen flex flex-col items-center bg-black text-white p-4">
+    <main className="min-h-screen flex flex-col items-center bg-black text-white p-4 overflow-x-hidden">
       <div className="w-full h-auto md:w-1/2 shadow-white rounded-2xl shadow-lg border border-white my-8 p-6">
         <div className='flex justify-center'>
           <img className="flex" src = "https://i.imgur.com/skwUD9f.png" alt="FrenzyVJN" width="100" height="100" />
