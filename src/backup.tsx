@@ -2,7 +2,7 @@ import { FaLinkedin, FaEnvelope, FaGithub, FaDiscord } from 'react-icons/fa';
 
 export const socialMedias = [
   {
-    href: 'mailto:svijayan01@gmail.com',
+    href: 'mailto:vjn@frenzyvjn.tech',
     ariaLabel: 'Compose an email to FrenzyVJN',
     title: 'Write an Email to FrenzyVJN',
     Icon: FaEnvelope,
