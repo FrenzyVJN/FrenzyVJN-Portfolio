@@ -2,7 +2,7 @@ import { FaLinkedin, FaEnvelope, FaGithub, FaDiscord } from 'react-icons/fa';
 import { MdHome } from "react-icons/md";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { FaRegUser } from "react-icons/fa";
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link} from 'react-scroll';
 
 export const socialMedias = [
   {
