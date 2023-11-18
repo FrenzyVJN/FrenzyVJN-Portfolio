@@ -29,7 +29,7 @@ function Home() {
       ];
       
     return (       
-        <main className="min-h-screen flex flex-col items-center bg-black text-white overflow-y-hidden">
+        <main className="min-h-screen flex flex-col items-center bg-slate-900 text-white overflow-y-hidden">
             <div className="w-full md:w-1/2 h-auto shadow-white rounded-2xl shadow-lg border border-white py-24 mt-10 mb-10">
                 <div className='flex justify-center'>
                 <a href='/'>

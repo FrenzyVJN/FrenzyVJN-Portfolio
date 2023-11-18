@@ -2,7 +2,7 @@ import { FaLinkedin, FaEnvelope, FaGithub, FaDiscord } from 'react-icons/fa';
 
 function Project({ title, description, languages, githubLink }: { title: any, description: any, languages: any[], githubLink: any }) {
   return (
-    <div className="mb-4 p-6 bg-black rounded-2xl shadow-white border shadow-lg border-white">
+    <div className="mb-4 p-6 bg-slate-900 rounded-2xl shadow-white border shadow-lg border-white">
       <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start mb-2">
         <div>
           <h3 className="text-white text-2xl font-bold mb-2 lg:mb-0">{title}</h3>
@@ -79,7 +79,7 @@ function Projects() {
   ];
 
   return (
-    <main id='scrollfix1' className="min-h-screen flex flex-col items-center bg-black text-white p-4 overflow-y-hidden">
+    <main id='scrollfix1' className="min-h-screen flex flex-col items-center bg-slate-900 text-white p-4 overflow-y-hidden">
       <section className="w-full md:w-2/3 lg:w-1/2 border shadow-lg shadow-white rounded-xl mt-10 mb-10 py-16 p-6">
         <h2 className="text-3xl font-bold mb-4">Projects</h2>
         {projects.map((project, index) => (

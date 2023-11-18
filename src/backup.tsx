@@ -56,7 +56,7 @@ const projects = [
 
 function Project({ title, description, languages, githubLink }: { title: any, description: any, languages: any[], githubLink: any }) {
   return (
-    <div className="mb-4 p-6 bg-black rounded-2xl shadow-white border shadow-lg border-white">
+    <div className="mb-4 p-6 bg-slate-900 rounded-2xl shadow-white border shadow-lg border-white">
       <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start mb-2">
         <div>
           <h3 className="text-white text-2xl font-bold mb-2 lg:mb-0">{title}</h3>
@@ -80,7 +80,7 @@ function Project({ title, description, languages, githubLink }: { title: any, de
 
 function Help() {
   return (
-    <main className="min-h-screen flex flex-col items-center bg-black text-white p-4">
+    <main className="min-h-screen flex flex-col items-center bg-slate-900 text-white p-4">
       <div className="w-full h-auto md:w-1/2 shadow-white rounded-2xl shadow-lg border border-white my-8 p-6">
         <div className='flex justify-center'>
           <img className="flex" src = "https://i.imgur.com/skwUD9f.png" alt="FrenzyVJN" width="100" height="100" />

@@ -4,7 +4,7 @@ import { FaRegUser } from "react-icons/fa";
 
 function Header() {
     return (
-        <div className="flex bg-black ">
+        <div className="flex bg-slate-900">
             <div className="flex mx-auto mt-8 border rounded-xl bg-gray-600 items-center border-white">
                 <a href="/home">
                     <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mr-10 mx-auto h-fit">
