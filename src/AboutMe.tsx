@@ -29,11 +29,20 @@ function AboutMe() {
       ];
     return ( 
         <main className="h-screen flex flex-col items-center bg-black text-white p-4 overflow-y-hidden">            
-            <section className="mb-10 mt-10 w-full py-32 md:w-2/3 lg:w-1/2 border border-white rounded-2xl shadow-white shadow-lg p-6">
+            <section className="mb-10 mt-10 w-full py-10 md:w-2/3 lg:w-1/2 border border-white rounded-2xl shadow-white shadow-lg p-6">
                 <h2 className="text-5xl font-bold mb-4">About Me</h2>
                 <br/>
-                <p className="text-center text-xl">
-                Hi, I am FrenzyVJN. I am a College Student who is into Cybersecurity (Ethical hacking, CTFs) and Full-Stack Development. I have expertise in Python and JS with knowledge of Flask, React. I also know C and R.        
+                <p className=' text-lg'>
+                👋 Greetings! I'm FrenzyVJN, a tech-savvy sophomore on a journey through Computer Science Engineering. I'm all about bringing ideas to life with a passion for innovation.
+                </p>
+                <p className=' text-lg'>
+                💡 My quest for knowledge takes me to CTFs, conferences, and meetups, where I connect with like-minded individuals and stay on the cutting edge.
+                </p>
+                <p className=' text-lg'>
+                👨‍💻 Fluent in Python, Javascript, React, R, and C, I'm a versatile developer. I've crafted projects that reflect my expertise in Cybersecurity, Ethical Hacking, and Full-Stack Development.
+                </p>
+                <p className=' text-lg'>
+                🎓 A College Student deeply involved in Cybersecurity and Full-Stack Development, I excel in Python and JS. Proficient in Flask and React, I also navigate the realms of C and R, providing diverse solutions to varied projects.
                 </p>
             </section>
             <section className="mb-auto w-full md:w-2/3 lg:w-1/2">

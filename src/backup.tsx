@@ -87,9 +87,18 @@ function Help() {
         <a href='about'>
             <h2 className="text-3xl font-bold mb-4">About Me</h2>
         </a>
-        <p className="text-center text-lg">
-          Hi, I am FrenzyVJN. I am a College Student who is into Cybersecurity (Ethical hacking, CTFs) and Full-Stack Development. I have expertise in Python and JS with knowledge of Flask, React. I also know C and R.        
-        </p>
+        <p className=' text-lg'>
+                👋 Greetings! I'm FrenzyVJN, a tech-savvy sophomore on a journey through Computer Science Engineering. I'm all about bringing ideas to life with a passion for innovation.
+                </p>
+                <p className=' text-lg'>
+                💡 My quest for knowledge takes me to CTFs, conferences, and meetups, where I connect with like-minded individuals and stay on the cutting edge.
+                </p>
+                <p className=' text-lg'>
+                👨‍💻 Fluent in Python, Javascript, React, R, and C, I'm a versatile developer. I've crafted projects that reflect my expertise in Cybersecurity, Ethical Hacking, and Full-Stack Development.
+                </p>
+                <p className=' text-lg'>
+                🎓 A College Student deeply involved in Cybersecurity and Full-Stack Development, I excel in Python and JS. Proficient in Flask and React, I also navigate the realms of C and R, providing diverse solutions to varied projects.
+                </p>
         
       </section>
 
