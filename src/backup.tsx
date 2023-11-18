@@ -1,4 +1,8 @@
 import { FaLinkedin, FaEnvelope, FaGithub, FaDiscord } from 'react-icons/fa';
+import { MdHome } from "react-icons/md";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { FaRegUser } from "react-icons/fa";
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 export const socialMedias = [
   {
@@ -80,7 +84,28 @@ function Project({ title, description, languages, githubLink }: { title: any, de
 
 function Help() {
   return (
-    <main className="min-h-screen flex flex-col items-center bg-slate-900 text-white p-4">
+    <main className="home min-h-screen flex flex-col items-center bg-slate-900 text-white p-4">
+          <div className="flex justify-center w-full fixed top-0">
+          <div>
+            <div className="flex mx-auto mt-6 border rounded-xl bg-gray-600 items-center justify-center border-white">
+            <Link to="home" smooth={true} offset={-70} duration={500}>
+              <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mr-10 mx-auto h-fit">
+                <MdHome />
+              </h1>
+            </Link>
+            <Link to="about" smooth={true} offset={-48} duration={500}>
+              <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mx-5 h-fit">
+                <FaRegUser />
+              </h1>
+            </Link>
+            <Link to="projects" smooth={true} offset={-998} duration={500}>
+              <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 ml-10 h-fit">
+                <AiOutlineFundProjectionScreen />
+              </h1>
+            </Link>
+            </div>
+          </div>
+      </div>
       <div className="w-full h-auto md:w-1/2 shadow-white rounded-2xl shadow-lg border border-white my-8 p-6">
         <div className='flex justify-center'>
           <img className="flex" src = "https://i.imgur.com/skwUD9f.png" alt="FrenzyVJN" width="100" height="100" />
@@ -94,7 +119,7 @@ function Help() {
         </div>
       </div>
 
-      <section className="my-8 w-full md:w-2/3 lg:w-1/2 border border-white rounded-2xl shadow-white shadow-lg p-6">
+      <section className="about my-8 w-full md:w-2/3 lg:w-1/2 border border-white rounded-2xl shadow-white shadow-lg p-6">
         <a href='about'>
             <h2 className="text-3xl font-bold mb-4">About Me</h2>
         </a>
@@ -122,7 +147,7 @@ function Help() {
         ))}
       </section>
 
-      <section className="my-8 w-full md:w-2/3 lg:w-1/2">
+      <section className="projects my-8 w-full md:w-2/3 lg:w-1/2">
         <h2 className="text-3xl font-bold mb-4">Social</h2>
         <div className="flex items-center mt-2">
           {socialMedias.map((socialMedia, index) => (
