@@ -29,24 +29,43 @@ export const socialMedias = [
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Will be updated soon',
+    title: 'Hand Cricket Score Calculator',
+    description: 'I developed a two-player hand gesture-based cricket game using OpenCV and a custom Hand Tracking Module, showcasing my proficiency in computer vision and interactive application development.',
+    languages: ['Python', 'OpenCV'],
+    githubLink: 'https://github.com/FrenzyVJN/hcsc',
   },
   {
-    title: 'Project 2',
-    description: 'Will be updated soon',
+    title: 'Quiz Application',
+    description: 'I designed an interactive Quiz Portal using Python\'s tkinter library. This application facilitates teacher-student interactions, allowing teachers to add questions and students to access quiz results. The user-friendly interface enhances the learning experience.',
+    languages: ['Python', 'tkinter'],
+    githubLink: 'https://github.com/FrenzyVJN/quiz_app',
   },
   // Add more projects as needed
 ];
 
-function Project({ title ,description } : {title : any, description : any}) {
+function Project({ title, description, languages, githubLink }: { title: any, description: any, languages: any[], githubLink: any }) {
   return (
     <div className="mb-4 p-6 bg-black rounded-2xl shadow-white border shadow-lg border-white">
-      <h3 className="text-white text-2xl font-bold mb-2">{title}</h3>
+      <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start mb-2">
+        <div>
+          <h3 className="text-white text-2xl font-bold mb-2 lg:mb-0">{title}</h3>
+          <a href={githubLink} target="_blank" rel="noopener noreferrer" className="text-blue-500" title="GitHub Repository">
+            View on GitHub
+          </a>
+        </div>
+        <div className="flex lg:mt-0 mt-2">
+          {languages.map((language, index) => (
+            <span key={index} className="mr-2 px-2 py-1 bg-gray-600 text-white rounded">
+              {language}
+            </span>
+          ))}
+        </div>
+      </div>
       <p className="text-white text-justify">{description}</p>
     </div>
   );
 }
+
 
 function Help() {
   return (
@@ -71,6 +90,7 @@ function Help() {
         <p className="text-center text-lg">
           Hi, I am FrenzyVJN. I am a College Student who is into Cybersecurity (Ethical hacking, CTFs) and Full-Stack Development. I have expertise in Python and JS with knowledge of Flask, React. I also know C and R.        
         </p>
+        
       </section>
 
       <section className="my-8 w-full md:w-2/3 lg:w-1/2 border shadow-lg shadow-white rounded-xl p-6">
@@ -100,6 +120,7 @@ function Help() {
           ))}
         </div>
       </section>
+      <p className="text-center text-white text-sm mt-4">© 2023 FrenzyVJN</p>
     </main>
   );
 }
