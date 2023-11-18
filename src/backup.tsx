@@ -40,7 +40,18 @@ const projects = [
     languages: ['Python', 'tkinter'],
     githubLink: 'https://github.com/FrenzyVJN/quiz_app',
   },
-  // Add more projects as needed
+  {
+    title: 'Physics Virtual Lab',
+    description: 'I developed a Physics Virtual Lab using ReactJS and TailwindCSS. This application allows users to simulate experiments and visualize the results. The user-friendly interface enhances the learning experience.',
+    languages: ['ReactJS', 'Tailwind CSS'],
+    githubLink: 'https://github.com/FrenzyVJN/PhysicsLab2.0',
+  },
+  {
+    title: 'Proximity Social Media Platform',
+    description: 'I designed UI for social media platform using Figma, NextJS and TailwindCSS. This application allows users to post and interact with other users near them.',
+    languages: ['Figma','NextJS', 'Tailwind CSS'],
+    githubLink: 'https://github.com/FrenzyVJN/Proximity-Social-Media'
+  }
 ];
 
 function Project({ title, description, languages, githubLink }: { title: any, description: any, languages: any[], githubLink: any }) {
@@ -61,7 +72,7 @@ function Project({ title, description, languages, githubLink }: { title: any, de
           ))}
         </div>
       </div>
-      <p className="text-white text-justify">{description}</p>
+      <p className="text-white text-center">{description}</p>
     </div>
   );
 }
