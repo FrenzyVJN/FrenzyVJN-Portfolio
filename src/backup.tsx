@@ -98,7 +98,7 @@ function Help() {
                 <FaRegUser />
               </h1>
             </Link>
-            <Link to="projects" smooth={true} offset={window.innerWidth < 768 ? -1930 : -998} duration={500}>
+            <Link to="" smooth={true} offset={-980} duration={500} className="projects-link">
               <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 ml-10 h-fit">
                 <AiOutlineFundProjectionScreen />
               </h1>
@@ -146,7 +146,7 @@ function Help() {
           <Project key={index} {...project} />
         ))}
       </section>
-
+      <p className='dummy'></p>
       <section className="projects my-8 w-full md:w-2/3 lg:w-1/2">
         <h2 className="text-3xl font-bold mb-4">Social</h2>
         <div className="flex items-center mt-2">
