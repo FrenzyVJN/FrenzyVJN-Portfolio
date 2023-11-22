@@ -2,7 +2,7 @@ import { FaLinkedin, FaEnvelope, FaGithub, FaDiscord } from 'react-icons/fa';
 import { MdHome } from "react-icons/md";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { FaRegUser } from "react-icons/fa";
-import { Link} from 'react-scroll';
+import { Link } from 'react-scroll';
 
 export const socialMedias = [
   {
@@ -53,7 +53,7 @@ const projects = [
   {
     title: 'Proximity Social Media Platform',
     description: 'I designed UI for social media platform using Figma, NextJS and TailwindCSS. This application allows users to post and interact with other users near them.',
-    languages: ['Figma','NextJS', 'Tailwind CSS'],
+    languages: ['Figma', 'NextJS', 'Tailwind CSS'],
     githubLink: 'https://github.com/FrenzyVJN/Proximity-Social-Media'
   }
 ];
@@ -85,9 +85,9 @@ function Project({ title, description, languages, githubLink }: { title: any, de
 function Help() {
   return (
     <main className="home min-h-screen flex flex-col items-center bg-slate-900 text-white p-4">
-          <div className="flex justify-center w-full fixed top-0">
-          <div>
-            <div className="flex mx-auto mt-6 border rounded-xl bg-gray-600 items-center justify-center border-white">
+      <div className="flex justify-center w-full fixed top-0">
+        <div>
+          <div className="flex mx-auto mt-6 border rounded-xl bg-gray-600 items-center justify-center border-white">
             <Link to="home" smooth={true} offset={-70} duration={500}>
               <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mr-10 mx-auto h-fit">
                 <MdHome />
@@ -98,17 +98,19 @@ function Help() {
                 <FaRegUser />
               </h1>
             </Link>
-            <Link to="" smooth={true} offset={-980} duration={500} className="projects-link">
+            <Link to="project" smooth={true} offset={
+              -40
+            } duration={500} className="projects-link">
               <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 ml-10 h-fit">
                 <AiOutlineFundProjectionScreen />
               </h1>
             </Link>
-            </div>
           </div>
+        </div>
       </div>
       <div className="w-full h-auto md:w-1/2 shadow-white rounded-2xl shadow-lg border border-white my-8 p-6">
         <div className='flex justify-center'>
-          <img className="flex" src = "https://i.imgur.com/skwUD9f.png" alt="FrenzyVJN" width="100" height="100" />
+          <img className="flex" src="https://i.imgur.com/skwUD9f.png" alt="FrenzyVJN" width="100" height="100" />
         </div>
         <h1 className="text-4xl text-center font-bold mb-4">FrenzyVJN</h1>
 
@@ -121,33 +123,32 @@ function Help() {
 
       <section className="about my-8 w-full md:w-2/3 lg:w-1/2 border border-white rounded-2xl shadow-white shadow-lg p-6">
         <a href='about'>
-            <h2 className="text-3xl font-bold mb-4">About Me</h2>
+          <h2 className="text-3xl font-bold mb-4">About Me</h2>
         </a>
         <p className=' text-lg'>
-                👋 Greetings! I'm FrenzyVJN, a tech-savvy sophomore on a journey through Computer Science Engineering. I'm a Cybersecurity Enthusiast.
-                </p>
-                <p className=' text-lg'>
-                💡 My quest for knowledge takes me to CTFs, conferences, and meetups, where I connect with like-minded individuals and stay on the cutting edge.
-                </p>
-                <p className=' text-lg'>
-                👨‍💻 Fluent in Python, Javascript, React, R, and C, I'm a versatile developer. I've crafted projects that reflect my expertise in Cybersecurity, Ethical Hacking, and Full-Stack Development.
-                </p>
-                <p className=' text-lg'>
-                🎓 A College Student deeply involved in Cybersecurity and Full-Stack Development, I excel in Python and JS. Proficient in Flask and React, I also navigate the realms of C and R, providing diverse solutions to varied projects.
-                </p>
-        
-      </section>
+          👋 Greetings! I'm FrenzyVJN, a tech-savvy sophomore on a journey through Computer Science Engineering. I'm a Cybersecurity Enthusiast.
+        </p>
+        <p className=' text-lg'>
+          💡 My quest for knowledge takes me to CTFs, conferences, and meetups, where I connect with like-minded individuals and stay on the cutting edge.
+        </p>
+        <p className=' text-lg'>
+          👨‍💻 Fluent in Python, Javascript, React, R, and C, I'm a versatile developer. I've crafted projects that reflect my expertise in Cybersecurity, Ethical Hacking, and Full-Stack Development.
+        </p>
+        <p className=' text-lg'>
+          🎓 A College Student deeply involved in Cybersecurity and Full-Stack Development, I excel in Python and JS. Proficient in Flask and React, I also navigate the realms of C and R, providing diverse solutions to varied projects.
+        </p>
 
-      <section className="my-8 w-full md:w-2/3 lg:w-1/2 border shadow-lg shadow-white rounded-xl p-6">
+      </section>
+      <section id="project" className="my-8 w-full md:w-2/3 lg:w-1/2 border shadow-lg shadow-white rounded-xl p-6">
         <a href='projects'>
-            <h2 className="text-3xl font-bold text-idk mb-4">Projects</h2>
+          <h2 className="text-3xl font-bold text-idk mb-4">Projects</h2>
         </a>
         {projects.map((project, index) => (
           <Project key={index} {...project} />
         ))}
       </section>
-      <p className='dummy'></p>
-      <section className="projects my-8 w-full md:w-2/3 lg:w-1/2">
+
+      <section className="my-8 w-full md:w-2/3 lg:w-1/2">
         <h2 className="text-3xl font-bold mb-4">Social</h2>
         <div className="flex items-center mt-2">
           {socialMedias.map((socialMedia, index) => (
