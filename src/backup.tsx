@@ -98,9 +98,7 @@ function Help() {
                 <FaRegUser />
               </h1>
             </Link>
-            <Link to="project" smooth={true} offset={
-              -40
-            } duration={500} className="projects-link">
+            <Link to="project" smooth={true} offset={-50} duration={500} className="projects-link">
               <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 ml-10 h-fit">
                 <AiOutlineFundProjectionScreen />
               </h1>
