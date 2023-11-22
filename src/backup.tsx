@@ -3,6 +3,17 @@ import { MdHome } from "react-icons/md";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { FaRegUser } from "react-icons/fa";
 import { Link } from 'react-scroll';
+import { MdEmojiEvents } from "react-icons/md";
+
+const events = [
+  {
+    title: 'Coming Soon...',
+    description: 'Coming soon...',
+    date: 'Will be updated soon...',
+  },
+  // Add more events as needed
+];
+
 
 export const socialMedias = [
   {
@@ -49,6 +60,7 @@ const projects = [
     description: 'I developed a Physics Virtual Lab using ReactJS and TailwindCSS. This application allows users to simulate experiments and visualize the results. The user-friendly interface enhances the learning experience.',
     languages: ['ReactJS', 'Tailwind CSS'],
     githubLink: 'https://github.com/FrenzyVJN/PhysicsLab2.0',
+    projectLink: 'https://physics.frenzyvjn.tech/'
   },
   {
     title: 'Proximity Social Media Platform',
@@ -60,16 +72,34 @@ const projects = [
     title: 'CTF Hosting Platform',
     description: 'I developed a CTF Hosting Platform using NextJS and TailwindCSS. This application allows users to host CTFs and participate in CTFs hosted by others.',
     languages: ['NextJS', 'Tailwind CSS'],
-    githubLink:'https://github.com/FrenzyVJN/frenzyctf'
+    githubLink:'https://github.com/FrenzyVJN/frenzyctf',
+    projectLink: 'https://ctf.frenzyvjn.tech/'
+  },
+  {
+    title: 'FrenzyVJN\'s Portfolio',
+    description: 'I designed my portfolio using ReactJS and TailwindCSS. This application allows users to know more about me and my projects.',
+    languages: ['ReactJS', 'Tailwind CSS'],
+    githubLink: 'https://github.com/FrenzyVJN/FrenzyVJN-Portfolio',
+    projectLink: 'https://frenzyvjn.tech/'
   }
 ];
 
-function Project({ title, description, languages, githubLink }: { title: any, description: any, languages: any[], githubLink: any }) {
+// ... (Social media and project data)
+
+function Project({ title, description, languages, githubLink, projectLink }: { title: any, description: any, languages: any[], githubLink: any, projectLink?: string }) {
   return (
     <div className="mb-4 p-6 bg-slate-900 rounded-2xl shadow-white border shadow-lg border-white">
       <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start mb-2">
         <div>
-          <h3 className="text-white text-2xl font-bold mb-2 lg:mb-0">{title}</h3>
+          <h3 className="text-white text-2xl font-bold mb-2 lg:mb-0">
+            {projectLink ? (
+              <a href={projectLink} target="_blank" rel="noopener noreferrer">
+                {title}
+              </a>
+            ) : (
+              title
+            )}
+          </h3>
           <a href={githubLink} target="_blank" rel="noopener noreferrer" className="text-blue-500" title="GitHub Repository">
             View on GitHub
           </a>
@@ -87,6 +117,22 @@ function Project({ title, description, languages, githubLink }: { title: any, de
   );
 }
 
+// ... (Help component)
+
+
+function Event({ title, description, date }: { title: any, description: any, date: any }) {
+  return (
+    <div className="mb-4 p-6 bg-slate-900 rounded-2xl shadow-white border shadow-lg border-white">
+      <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start mb-2">
+        <div>
+          <h3 className="text-white text-2xl font-bold mb-2 lg:mb-0">{title}</h3>
+          <p className="text-gray-400">{date}</p>
+        </div>
+      </div>
+      <p className="text-white text-center">{description}</p>
+    </div>
+  );
+}
 
 function Help() {
   return (
@@ -107,6 +153,11 @@ function Help() {
             <Link to="project" smooth={true} offset={-50} duration={500} className="projects-link">
               <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 ml-10 h-fit">
                 <AiOutlineFundProjectionScreen />
+              </h1>
+            </Link>
+            <Link to="events" smooth={true} duration={500} className='events-link'>
+              <h1 className='text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 ml-10 h-fit'>
+                <MdEmojiEvents />
               </h1>
             </Link>
           </div>
@@ -151,7 +202,14 @@ function Help() {
           <Project key={index} {...project} />
         ))}
       </section>
-
+      <section id="events" className="my-8 w-full md:w-2/3 lg:w-1/2 border shadow-lg shadow-white rounded-xl p-6">
+        <a href='events'>
+          <h2 className="text-3xl font-bold text-idk mb-4">Events Hosted</h2>
+        </a>
+        {events.map((event, index) => (
+          <Event key={index} {...event} />
+        ))}
+      </section>
       <section className="my-8 w-full md:w-2/3 lg:w-1/2">
         <h2 className="text-3xl font-bold mb-4">Social</h2>
         <div className="flex items-center mt-2">
@@ -176,3 +234,4 @@ function Help() {
 }
 
 export default Help;
+
