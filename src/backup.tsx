@@ -55,6 +55,12 @@ const projects = [
     description: 'I designed UI for social media platform using Figma, NextJS and TailwindCSS. This application allows users to post and interact with other users near them.',
     languages: ['Figma', 'NextJS', 'Tailwind CSS'],
     githubLink: 'https://github.com/FrenzyVJN/Proximity-Social-Media'
+  },
+  {
+    title: 'CTF Hosting Platform',
+    description: 'I developed a CTF Hosting Platform using NextJS and TailwindCSS. This application allows users to host CTFs and participate in CTFs hosted by others.',
+    languages: ['NextJS', 'Tailwind CSS'],
+    githubLink:'https://github.com/FrenzyVJN/frenzyctf'
   }
 ];
 
