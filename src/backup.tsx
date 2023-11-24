@@ -5,7 +5,7 @@ import { FaRegUser } from "react-icons/fa";
 import { Link } from 'react-scroll';
 import { MdEmojiEvents } from "react-icons/md";
 import './index.css';
-
+import img from './assets/logo.png';
 const events = [
   {
     title: 'Coming Soon...',
@@ -184,7 +184,7 @@ function Help() {
       </div>
       <div className="w-full h-auto md:w-1/2 shadow-white rounded-2xl shadow-lg border border-white my-8 p-6">
         <div className='flex justify-center'>
-          <img className="flex" src="./src/logo.png" alt="FrenzyVJN" width="100" height="100" />
+          <img className="flex" src={img} alt="FrenzyVJN" width="100" height="100" />
         </div>
         <h1 className="text-4xl text-center font-bold mb-4">FrenzyVJN</h1>
 
