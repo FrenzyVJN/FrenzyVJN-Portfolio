@@ -89,7 +89,7 @@ const projects = [
 
 function Project({ title, description, languages, githubLink, projectLink }: { title: any, description: any, languages: any[], githubLink: any, projectLink?: string }) {
   return (
-    <div className="mb-4 p-6 bg-inherit rounded-2xl shadow-white border shadow-lg border-white">
+    <div className="mb-4 p-6 bg-inherit rounded-2xl shadow-white border shadow-md border-white">
       <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start mb-2">
         <div>
           <h3 className="text-white text-2xl font-bold mb-2 lg:mb-0">
@@ -184,13 +184,13 @@ function Help() {
       </div>
       <div className="w-full h-auto md:w-1/2 shadow-white rounded-2xl shadow-lg border border-white my-8 p-6">
         <div className='flex justify-center'>
-          <img className="flex" src="https://i.imgur.com/skwUD9f.png" alt="FrenzyVJN" width="100" height="100" />
+          <img className="flex" src="./src/logo.png" alt="FrenzyVJN" width="100" height="100" />
         </div>
         <h1 className="text-4xl text-center font-bold mb-4">FrenzyVJN</h1>
 
         <div className='mb-4'>
           <h2 className="text-lg text-center">
-            Tech Enthusiast | Full-Stack Developer | Cybersecurity Enthusiast
+          Cybersecurity Enthusiast | Tech Enthusiast | Full-Stack Developer
           </h2>
         </div>
       </div>
