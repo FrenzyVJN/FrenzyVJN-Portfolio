@@ -146,8 +146,8 @@ function Scores({ ctfname, rank }: { ctfname: any, rank: any}) {
   return(
       <div className='flex flex-col lg:flex-row lg:justify-between items-center lg:items-start mb-2'>
         <div>
-          <h3 className='text-white text-2xl font-bold mb-2 lg:mb-0'>{ctfname}</h3>
-          <p className='text-gray-400'>{rank}</p>
+          <h3 className='text-white text-xl font-bold mb-2 lg:mb-0'>{ctfname}</h3>
+          <p className='text-gray-400'>Rank - {rank}</p>
         </div>
         <p className='text-white text-center'></p>
       </div>
@@ -174,7 +174,7 @@ function Help() {
                 <AiOutlineFundProjectionScreen />
               </h1>
             </Link>
-            <Link to="events" smooth={true} duration={500} className='events-link'>
+            <Link to="Scores" smooth={true} duration={500} className='events-link'>
               <h1 className='text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mx-2 md:mx-5 h-fit'>
                 <MdEmojiEvents />
               </h1>
@@ -221,14 +221,6 @@ function Help() {
           <Project key={index} {...project} />
         ))}
       </section>
-      <section id="events" className="my-8 w-full md:w-2/3 lg:w-1/2 border shadow-lg shadow-white rounded-xl p-6">
-        <a href='events'>
-          <h2 className="text-3xl font-bold text-idk mb-4">Events Hosted</h2>
-        </a>
-        {events.map((event, index) => (
-          <Event key={index} {...event} />
-        ))}
-      </section>
       <section className='my-8 w-full md:w-2/3 lg:w-1/2 border shadow-lg shadow-white rounded-xl p-6' id="Scores">
         <a href='scores'>
           <h2 className='text-3xl font-bold text-idk mb-4'>Scores</h2>
@@ -237,6 +229,15 @@ function Help() {
           <Scores key={index} {...score} />
         ))}
       </section>
+      <section id="events" className="my-8 w-full md:w-2/3 lg:w-1/2 border shadow-lg shadow-white rounded-xl p-6">
+        <a href='events'>
+          <h2 className="text-3xl font-bold text-idk mb-4">Events Hosted</h2>
+        </a>
+        {events.map((event, index) => (
+          <Event key={index} {...event} />
+        ))}
+      </section>
+
       <section className="my-8 w-full md:w-2/3 lg:w-1/2">
         <h2 className="text-3xl font-bold mb-4">Social</h2>
         <div className="flex items-center mt-2">
