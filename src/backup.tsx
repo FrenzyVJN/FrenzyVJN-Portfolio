@@ -123,7 +123,7 @@ function Project({ title, description, languages, githubLink, projectLink }: { t
 
 function Event({ title, description, date }: { title: any, description: any, date: any }) {
   return (
-    <div className="mb-4 p-6 bg-inherit rounded-2xl shadow-white border shadow-lg border-white">
+    <div className="mb-4 p-6 bg-inherit rounded-2xl  shadow-white border shadow-lg border-white">
       <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start mb-2">
         <div>
           <h3 className="text-white text-2xl font-bold mb-2 lg:mb-0">{title}</h3>
@@ -134,7 +134,25 @@ function Event({ title, description, date }: { title: any, description: any, dat
     </div>
   );
 }
+const scores = [
+  {
+    ctfname: 'Huntress CTF',
+    rank: '365/4000',
+  },
+  // Add more events as needed
+];
 
+function Scores({ ctfname, rank }: { ctfname: any, rank: any}) {
+  return(
+      <div className='flex flex-col lg:flex-row lg:justify-between items-center lg:items-start mb-2'>
+        <div>
+          <h3 className='text-white text-2xl font-bold mb-2 lg:mb-0'>{ctfname}</h3>
+          <p className='text-gray-400'>{rank}</p>
+        </div>
+        <p className='text-white text-center'></p>
+      </div>
+  )
+}
 function Help() {
   return (
     <main className="home min-h-screen flex flex-col items-center bg-gradient-to-r from-slate-950 via-slate-800 to-slate-950 text-white p-4 animate-movingBg">
@@ -142,22 +160,22 @@ function Help() {
         <div>
           <div className="flex mx-auto mt-6 border rounded-xl bg-gray-600 items-center justify-center border-white">
             <Link to="home" smooth={true} offset={-70} duration={500}>
-              <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mr-10 mx-auto h-fit">
+              <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mx-2 md:mx-5 h-fit">
                 <MdHome />
               </h1>
             </Link>
             <Link to="about" smooth={true} offset={-48} duration={500}>
-              <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mx-5 h-fit">
+              <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mx-2 md:mx-5 h-fit">
                 <FaRegUser />
               </h1>
             </Link>
             <Link to="project" smooth={true} offset={-50} duration={500} className="projects-link">
-              <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 ml-10 h-fit">
+              <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mx-2 md:mx-5 h-fit">
                 <AiOutlineFundProjectionScreen />
               </h1>
             </Link>
             <Link to="events" smooth={true} duration={500} className='events-link'>
-              <h1 className='text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 ml-10 h-fit'>
+              <h1 className='text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mx-2 md:mx-5 h-fit'>
                 <MdEmojiEvents />
               </h1>
             </Link>
@@ -211,6 +229,14 @@ function Help() {
           <Event key={index} {...event} />
         ))}
       </section>
+      <section className='my-8 w-full md:w-2/3 lg:w-1/2 border shadow-lg shadow-white rounded-xl p-6' id="Scores">
+        <a href='scores'>
+          <h2 className='text-3xl font-bold text-idk mb-4'>Scores</h2>
+        </a>
+        {scores.map((score, index) => (
+          <Scores key={index} {...score} />
+        ))}
+      </section>
       <section className="my-8 w-full md:w-2/3 lg:w-1/2">
         <h2 className="text-3xl font-bold mb-4">Social</h2>
         <div className="flex items-center mt-2">
@@ -229,6 +255,7 @@ function Help() {
           ))}
         </div>
       </section>
+
       <p className="text-center text-white text-sm mt-4">© 2023 FrenzyVJN</p>
     </main>
   );

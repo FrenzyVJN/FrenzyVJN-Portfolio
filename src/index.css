@@ -4,14 +4,14 @@
 
 
 .animate-movingBg{
-    animation: movingBg infinite 2s linear;
-    background-size: 200%;
+    animation: movingBg infinite 8s linear;
+    background-size: 400%;
   }
   @keyframes movingBg {
     0%{
         background-position: 0 0;
     }
     100%{
-        background-position: 200% 0 ;
+        background-position: 400% 0 ;
     }
     }  
