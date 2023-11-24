@@ -158,14 +158,14 @@ function Help() {
     <main className="home min-h-screen flex flex-col items-center bg-gradient-to-r from-slate-950 via-slate-800 to-slate-950 text-white p-4 animate-movingBg">
       <div className="flex justify-center w-full fixed top-0">
         <div>
-          <div className="flex mx-auto mt-6 border rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-inherit duration-300 bg-white bg-opacity-20 items-center justify-center border-white">
+          <div className="flex mx-auto mt-6 border rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-opacity-50 bg-white hover:bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 animate-movingBg duration-300  bg-opacity-20 items-center justify-center border-white">
             <Link to="home" smooth={true} offset={-70} duration={500}>
               <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mx-2 md:mx-5 h-fit">
                 <MdHome />
               </h1>
             </Link>
             <Link to="about" smooth={true} offset={-48} duration={500}>
-              <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mx-2 md:mx-5 h-fit">
+              <h1 className="text-white text-2xl  text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mx-2 md:mx-5 h-fit">
                 <FaRegUser />
               </h1>
             </Link>
