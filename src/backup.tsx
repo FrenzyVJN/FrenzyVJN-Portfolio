@@ -4,6 +4,7 @@ import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { FaRegUser } from "react-icons/fa";
 import { Link } from 'react-scroll';
 import { MdEmojiEvents } from "react-icons/md";
+import './index.css';
 
 const events = [
   {
@@ -88,7 +89,7 @@ const projects = [
 
 function Project({ title, description, languages, githubLink, projectLink }: { title: any, description: any, languages: any[], githubLink: any, projectLink?: string }) {
   return (
-    <div className="mb-4 p-6 bg-slate-900 rounded-2xl shadow-white border shadow-lg border-white">
+    <div className="mb-4 p-6 bg-inherit rounded-2xl shadow-white border shadow-lg border-white">
       <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start mb-2">
         <div>
           <h3 className="text-white text-2xl font-bold mb-2 lg:mb-0">
@@ -122,7 +123,7 @@ function Project({ title, description, languages, githubLink, projectLink }: { t
 
 function Event({ title, description, date }: { title: any, description: any, date: any }) {
   return (
-    <div className="mb-4 p-6 bg-slate-900 rounded-2xl shadow-white border shadow-lg border-white">
+    <div className="mb-4 p-6 bg-inherit rounded-2xl shadow-white border shadow-lg border-white">
       <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start mb-2">
         <div>
           <h3 className="text-white text-2xl font-bold mb-2 lg:mb-0">{title}</h3>
@@ -136,7 +137,7 @@ function Event({ title, description, date }: { title: any, description: any, dat
 
 function Help() {
   return (
-    <main className="home min-h-screen flex flex-col items-center bg-slate-900 text-white p-4">
+    <main className="home min-h-screen flex flex-col items-center bg-gradient-to-r from-slate-950 via-slate-800 to-slate-950 text-white p-4 animate-movingBg">
       <div className="flex justify-center w-full fixed top-0">
         <div>
           <div className="flex mx-auto mt-6 border rounded-xl bg-gray-600 items-center justify-center border-white">
