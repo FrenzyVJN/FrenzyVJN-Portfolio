@@ -169,12 +169,12 @@ function Help() {
                 <FaRegUser />
               </h1>
             </Link>
-            <Link to="project" smooth={true} offset={-50} duration={500} className="projects-link">
+            <Link to="project" smooth={true} offset={-45} duration={500} className="projects-link">
               <h1 className="text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mx-2 md:mx-5 h-fit">
                 <AiOutlineFundProjectionScreen />
               </h1>
             </Link>
-            <Link to="Scores" smooth={true} duration={500} className='events-link'>
+            <Link to="scores" smooth={true} offset={-45} duration={500} className='events-link'>
               <h1 className='text-white text-2xl text-bold md:text-3xl rounded-xl text-center flex justify-center w-fit p-2 mx-2 md:mx-5 h-fit'>
                 <MdEmojiEvents />
               </h1>
@@ -206,12 +206,14 @@ function Help() {
           💡 My quest for knowledge takes me to CTFs, conferences, and meetups, where I connect with like-minded individuals and stay on the cutting edge.
         </p>
         <p className=' text-lg'>
-          👨‍💻 Fluent in Python, Javascript, React, R, and C, I'm a versatile developer. I've crafted projects that reflect my expertise in Cybersecurity, Ethical Hacking, and Full-Stack Development.
+          👨‍💻 Fluent in Python, Javascript, React, R, SQL and C, I'm a versatile developer. I've crafted projects that reflect my expertise in Cybersecurity, Ethical Hacking, and Full-Stack Development.
         </p>
         <p className=' text-lg'>
           🎓 A College Student deeply involved in Cybersecurity and Full-Stack Development, I excel in Python and JS. Proficient in Flask and React, I also navigate the realms of C and R, providing diverse solutions to varied projects.
         </p>
-
+        <p className='text-lg'>
+          🌐 Additionally, I have a keen interest in computer vision and have successfully completed projects using OpenCV.
+        </p>
       </section>
       <section id="project" className="my-8 w-full md:w-2/3 lg:w-1/2 border shadow-lg shadow-white rounded-xl p-6">
         <a href='projects'>
@@ -221,7 +223,7 @@ function Help() {
           <Project key={index} {...project} />
         ))}
       </section>
-      <section className='my-8 w-full md:w-2/3 lg:w-1/2 border shadow-lg shadow-white rounded-xl p-6' id="Scores">
+      <section id="scores" className='my-8 w-full md:w-2/3 lg:w-1/2 border shadow-lg shadow-white rounded-xl p-6' >
         <a href='scores'>
           <h2 className='text-3xl font-bold text-idk mb-4'>Scores</h2>
         </a>
