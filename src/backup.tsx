@@ -200,7 +200,7 @@ function Help() {
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
         </a>
         <p className=' text-lg'>
-          👋 Greetings! I'm FrenzyVJN, a tech-savvy sophomore on a journey through Computer Science Engineering. I'm a Cybersecurity Enthusiast.
+          👋 Greetings! I'm FrenzyVJN, a tech-savvy fresher on a journey through Computer Science Engineering. I'm a Cybersecurity Enthusiast. Co-founder of Edita.
         </p>
         <p className=' text-lg'>
           💡 My quest for knowledge takes me to CTFs, conferences, and meetups, where I connect with like-minded individuals and stay on the cutting edge.
