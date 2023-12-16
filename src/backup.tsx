@@ -8,9 +8,9 @@ import './index.css';
 import img from './assets/logo.png';
 const events = [
   {
-    title: 'Coming Soon...',
-    description: 'Coming soon...',
-    date: 'Will be updated soon...',
+    title: 'EditaCTF',
+    description: 'CTF Host: Successfully organized and hosted Edita CTF, a small-scale Capture The Flag competition designed to provide participants with fundamental insights into online CTF challenges. Demonstrated proficiency in creating engaging and educational cybersecurity experiences, fostering a hands-on learning environment for participants to enhance their skills in a fun and competitive setting.',
+    date: '06-December-2023',
   },
   // Add more events as needed
 ];
@@ -51,10 +51,10 @@ const projects = [
     githubLink: 'https://github.com/FrenzyVJN/hcsc',
   },
   {
-    title: 'Quiz Application',
-    description: 'I designed an interactive Quiz Portal using Python\'s tkinter library. This application facilitates teacher-student interactions, allowing teachers to add questions and students to access quiz results. The user-friendly interface enhances the learning experience.',
-    languages: ['Python', 'tkinter'],
-    githubLink: 'https://github.com/FrenzyVJN/quiz_app',
+    title: 'EditaCTF Website',
+    description: 'I designed and developed the official website for Team Edita using NextJS and TailwindCSS. This platform serves as the primary channel for official communications, encompassing features such as writeup sharing, event hosting information. As a key contributor to Team Edita, I not only created but actively maintain this website, contributing to its diverse functionalities and enhancing the team\'s online presence.',
+    languages: ['NextJS', 'Tailwind CSS'],
+    githubLink: 'https://github.com/FrenzyVJN/Edita',
   },
   {
     title: 'Physics Virtual Lab',
@@ -62,12 +62,6 @@ const projects = [
     languages: ['ReactJS', 'Tailwind CSS'],
     githubLink: 'https://github.com/FrenzyVJN/PhysicsLab2.0',
     projectLink: 'https://physics.frenzyvjn.tech/'
-  },
-  {
-    title: 'Proximity Social Media Platform',
-    description: 'I designed UI for social media platform using Figma, NextJS and TailwindCSS. This application allows users to post and interact with other users near them.',
-    languages: ['Figma', 'NextJS', 'Tailwind CSS'],
-    githubLink: 'https://github.com/FrenzyVJN/Proximity-Social-Media'
   },
   {
     title: 'CTF Hosting Platform',
@@ -82,6 +76,12 @@ const projects = [
     languages: ['ReactJS', 'Tailwind CSS'],
     githubLink: 'https://github.com/FrenzyVJN/FrenzyVJN-Portfolio',
     projectLink: 'https://frenzyvjn.tech/'
+  },
+  {
+    title: 'Quiz Application',
+    description: 'I designed an interactive Quiz Portal using Python\'s tkinter library. This application facilitates teacher-student interactions, allowing teachers to add questions and students to access quiz results. The user-friendly interface enhances the learning experience.',
+    languages: ['Python', 'tkinter'],
+    githubLink: 'https://github.com/FrenzyVJN/quiz_app',
   }
 ];
 
@@ -126,11 +126,11 @@ function Event({ title, description, date }: { title: any, description: any, dat
     <div className="mb-4 p-6 bg-inherit rounded-2xl  shadow-white border shadow-lg border-white">
       <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start mb-2">
         <div>
-          <h3 className="text-white text-2xl font-bold mb-2 lg:mb-0">{title}</h3>
+          <h3 className="text-blue-300 text-2xl font-bold mb-2 lg:mb-0">{title}</h3>
           <p className="text-gray-400">{date}</p>
         </div>
       </div>
-      <p className="text-white text-center">{description}</p>
+      <p className="text-blue-100 text-center">{description}</p>
     </div>
   );
 }
