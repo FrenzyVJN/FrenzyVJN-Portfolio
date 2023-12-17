@@ -55,6 +55,7 @@ const projects = [
     description: 'I designed and developed the official website for Team Edita using NextJS and TailwindCSS. This platform serves as the primary channel for official communications, encompassing features such as writeup sharing, event hosting information. As a key contributor to Team Edita, I not only created but actively maintain this website, contributing to its diverse functionalities and enhancing the team\'s online presence.',
     languages: ['NextJS', 'Tailwind CSS'],
     githubLink: 'https://github.com/FrenzyVJN/Edita',
+    projectLink: 'https://edita.frenzyvjn.tech/'
   },
   {
     title: 'Physics Virtual Lab',
