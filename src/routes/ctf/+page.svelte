@@ -63,7 +63,7 @@
         <button on:click={checkAnswer} class="submit-button ctf-container hover:bg-blue-300 hover:bg-opacity-90 font-mono">Submit</button>
       {/if}
       {#if challengeSolved}
-        <p class="text-black font-semibold mt-4 font-mono">Congratulations! You've solved the challenge.</p>
+        <p class="text-white font-semibold mt-4 font-mono">Congratulations! You've solved the challenge.</p>
       {/if}
     </div>
   </main>
