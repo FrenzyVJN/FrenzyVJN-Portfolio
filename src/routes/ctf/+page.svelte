@@ -50,7 +50,7 @@
   
   <main class="flex items-center justify-center min-h-screen p-4 gradient-background">
     <div class="ctf-container ">
-      <h1 class="text-2xl font-bold mb-4 text-white font-mono">CTF Challenge</h1>
+      <h1 class="text-2xl font-bold mb-4 text-white font-mono">CTF Challenge (MORE CHALLENGES COMING SOON...)</h1>
       <p class="challenge-text text-white font-mono">
         Welcome to the CTF challenge! Solve the following puzzle to get the flag:
       </p>
