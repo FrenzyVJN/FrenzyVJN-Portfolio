@@ -55,7 +55,7 @@
 <section id="about" class="section about gradient-background min-h-screen flex flex-col items-center justify-center font-mono">
     <div class="flex flex-col items-center w-full max-w-screen-xl px-6 py-4">
       <h2 class="text-3xl font-bold text-white mb-4 hero-text">About Me</h2>
-      <p class="text-lg text-white intro-text md:w-3/4">
+      <p class="text-lg text-white intro-text md:w-3/4 text-center">
         Cybersecurity student who thrives on solving CTF challenges and coding for fun. When I’m not diving into security challenges, you’ll find me building web projects just because I enjoy it. 
       </p>
     </div>

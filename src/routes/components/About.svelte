@@ -12,7 +12,7 @@
 <section id="about" class="section about">
   <div class="flex flex-col items-center w-full max-w-screen-xl px-6 py-4">
     <h2 class="text-3xl font-bold mb-4">About Me</h2>
-    <p class="text-lg">
+    <p class="text-lg text-center">
       Here is a bit about who I am and what I do. I am passionate about coding and love to take on new challenges. This section is where you can learn more about my journey and experiences.
     </p>
   </div>

@@ -32,7 +32,6 @@
   .intro-text {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   }
- 
 
 </style>
 
@@ -45,7 +44,7 @@
     <button on:click={showNavBar} class="py-2 px-6 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
     </button>
     {#if (navBar == 1)}
-    <nav class="flex flex-row mt-40 items-center absolute justify-center bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+    <nav class="flex navbar flex-row mt-40 items-center absolute justify-center bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
       <a href="/" class="py-2 px-6 ">Home</a>
       <a href="/about" class="py-2 px-6 ">About</a>
       <a href="/projects" class="py-2 px-6 ">Projects</a>
