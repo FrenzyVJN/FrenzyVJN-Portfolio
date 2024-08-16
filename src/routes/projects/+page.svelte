@@ -43,17 +43,19 @@
       padding: 0;
     }
     .project-item {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.3s; /* Add transition for transform */
+}
 
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      margin-bottom: 20px;
-      transition: background 0.3s, box-shadow 0.3s;
-    }
-    .project-item:hover {
-      background: linear-gradient(to bottom, #4481eb 0%, #04befe 100%);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    }
+.project-item:hover {
+  background: linear-gradient(to bottom, #4481eb 0%, #04befe 100%);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(0.95); /* Scale down the item */
+}
+
   </style>
   
   <main class="gradient-background min-h-screen flex flex-col items-center  justify-center">
