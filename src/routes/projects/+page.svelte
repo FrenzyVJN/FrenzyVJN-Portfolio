@@ -53,7 +53,7 @@
 .project-item:hover {
   background: linear-gradient(to bottom, #4481eb 0%, #04befe 100%);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  transform: scale(0.95); /* Scale down the item */
+  transform: scale(1.05); /* Scale down the item */
 }
 
   </style>
