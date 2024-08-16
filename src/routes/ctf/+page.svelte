@@ -67,8 +67,10 @@
         What is my real name?
       </p>
       {#if !challengeSolved}
+      <form on:submit={checkAnswer}>
         <input type="text" bind:value={userAnswer} class="input-field placeholder:font-mono" placeholder="Enter your answer here" />
-        <button on:click={checkAnswer} class="submit-button ctf-container hover:bg-blue-300 hover:bg-opacity-90 font-mono">Submit</button>
+        <button class="submit-button ctf-container hover:bg-blue-300 hover:bg-opacity-90 font-mono">Submit</button>
+      </form>
       {/if}
       {#if challengeSolved}
         <p class="text-white font-semibold mt-4 font-mono">Congratulations! You've solved the challenge.</p>

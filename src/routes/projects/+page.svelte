@@ -56,6 +56,7 @@
   transform: scale(1.05); /* Scale down the item */
 }
 
+
   </style>
   
   <main class="gradient-background min-h-screen flex flex-col items-center  justify-center">
@@ -82,7 +83,7 @@
           <h2 class="text-2xl font-bold mb-2">Edita Discord Bot</h2>
           <p>Developed a versatile Discord bot to enhance Capture The Flag (CTF) competitions by automating challenge management, providing real-time updates, and facilitating team coordination.</p>
         </div>
-        <a href="https://github.com/FrenzyVJN" class="text-white font-mono underline underline-offset-2">
+        <a href="https://github.com/FrenzyVJN" target="_blank" class="text-white font-mono underline underline-offset-2">
           More projects in github...
         </a>
       </div>
