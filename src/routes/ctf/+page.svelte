@@ -10,6 +10,14 @@
         alert('Incorrect answer. Try again!');
       }
     }
+    let navBar = 0;
+    function showNavBar() {
+      if (navBar == 0) {
+        navBar = 1;
+      } else {
+        navBar = 0;
+      }
+    }
   </script>
   
   <style>
@@ -48,7 +56,7 @@
     }
   </style>
   
-  <main class="flex items-center justify-center min-h-screen p-4 gradient-background">
+  <main class="flex flex-col items-center justify-center min-h-screen p-4 gradient-background">
     <div class="ctf-container ">
       <h1 class="text-2xl font-bold mb-4 text-white font-mono">CTF Challenge (MORE CHALLENGES COMING SOON...)</h1>
       <p class="challenge-text text-white font-mono">
@@ -65,6 +73,18 @@
       {#if challengeSolved}
         <p class="text-white font-semibold mt-4 font-mono">Congratulations! You've solved the challenge.</p>
       {/if}
+      
     </div>
+    <button on:click={showNavBar} class="py-2 px-6 mt-10 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+    </button>
+    {#if (navBar === 1)}
+    <nav class="flex flex-row mt-4 items-center justify-center bg-white sticky text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+      <a href="/" class="py-2 px-6 ">Home</a>
+      <a href="/about" class="py-2 px-6 ">About</a>
+      <a href="/projects" class="py-2 px-6 ">Projects</a>
+      <a href="/ctf" class="py-2 px-6 ">CTF</a>
+      <a href="/contact" class="py-2 px-6 ">Contact</a>
+    </nav>
+    {/if}
   </main>
   

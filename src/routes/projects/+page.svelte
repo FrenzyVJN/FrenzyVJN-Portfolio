@@ -80,14 +80,14 @@
           <h2 class="text-2xl font-bold mb-2">Edita Discord Bot</h2>
           <p>Developed a versatile Discord bot to enhance Capture The Flag (CTF) competitions by automating challenge management, providing real-time updates, and facilitating team coordination.</p>
         </div>
-        <a href="https://github.com/FrenzyVJN" class="text-white">
+        <a href="https://github.com/FrenzyVJN" class="text-white font-mono underline underline-offset-2">
           More projects in github...
         </a>
       </div>
       <button on:click={showNavBar} class="py-2 px-6 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
       </button>
       {#if (navBar === 1)}
-      <nav class="flex flex-row mt-4 items-center justify-center bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+      <nav class="flex flex-row mt-4 items-center justify-center bg-white sticky text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
         <a href="/" class="py-2 px-6 ">Home</a>
         <a href="/about" class="py-2 px-6 ">About</a>
         <a href="/projects" class="py-2 px-6 ">Projects</a>
