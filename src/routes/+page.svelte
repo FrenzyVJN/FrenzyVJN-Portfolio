@@ -1,5 +1,4 @@
 <script>
-  import About from './components/About.svelte';
   let darkMode = false;
 
   function toggleDarkMode() {
