@@ -59,11 +59,35 @@
         Cybersecurity student who thrives on solving CTF challenges and coding for fun. When I’m not diving into security challenges, you’ll find me building web projects just because I enjoy it. 
       </p>
     </div>
+    <div class="text-white flex flex-col justify-center items-center">
+    <h1 class="text-2xl hero-text font-bold">
+    Achievements
+    </h1>
+    <p class="intro-text font-bold">
+Top 3% on TryHackMe—breaking into systems, but not into the top 1% (yet).
+    </p>
+    <p class="intro-text text-[5px]">
+    2nd at Enigma Quest CTF organised at SSN on 1st March 2024
+    </p>
+    <p class="intro-text">
+    12th at Nexus CTF organised by YCF CTF team on April 20 2024
+  </p>
+  <p class="intro-text">
+    3rd at Password CTF organised at VIT Chennai on 29th January 2024
+  </p>
+  <p class="intro-text">
+    Participated in 30+ CTFs
+  </p>
+  <script src="https://tryhackme.com/badge/2064469"></script>
+  <div>
+    
+  </div>
+</div>
     <button on:click={showNavBar} class="py-2 px-6 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
     </button>
     <div class="mt-40"></div>
     {#if (navBar == 1)}
-    <nav class="flex flex-row absolute md:mt-32 mt-44 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+    <nav class="flex flex-row absolute md:mt-64 mt-44 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
     <a href="/" class="py-2 px-6">Home</a>
     <a href="/about" class="py-2 px-6">About</a>
     <a href="/projects" class="py-2 px-6">Projects</a>
